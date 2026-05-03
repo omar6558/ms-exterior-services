@@ -2,7 +2,7 @@ export const BUSINESS = {
   name: 'MS Exterior Services',
   phone: '(865) 320-8891',
   phoneHref: 'tel:+18653208891',
-  email: 'info@msexteriorservices.com', // SWAP: your real email
+  email: 'msexteriorservices2@gmail.com',
   ownerName: 'Mo',
   address: 'Knoxville, TN',
   serviceArea: [
@@ -16,8 +16,8 @@ export const BUSINESS = {
     'Alcoa',
     'Hardin Valley',
   ],
-  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID ?? '', // SWAP: add to .env.local + Vercel env vars
-  googleMapsEmbedUrl: '', // SWAP: generate at maps.google.com → Share → Embed a map
+  // To show YOUR business pin instead of just Knoxville: go to maps.google.com, search your business, click Share → Embed a map, and replace this URL
+  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207241.61!2d-84.07682059999999!3d35.9526659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c16f1c1d17fbf%3A0x81e2f7e6e9917fcb!2sKnoxville%2C%20TN!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus',
   siteUrl: 'https://msexteriorservices.com', // SWAP: your real domain
 };
 

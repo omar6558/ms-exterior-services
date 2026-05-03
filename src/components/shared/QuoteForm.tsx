@@ -1,58 +1,15 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
-import { Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
+import { Send, CheckCircle } from 'lucide-react';
 import { BUSINESS, SERVICES } from '@/lib/constants';
 
-interface FormData {
-  name: string;
-  phone: string;
-  email: string;
-  service: string;
-  address: string;
-  message: string;
-}
+const FORMSPREE_ID = 'mvzlkoyj';
 
 export default function QuoteForm({ preselectedService = '' }: { preselectedService?: string }) {
-  const [form, setForm] = useState<FormData>({
-    name: '',
-    phone: '',
-    email: '',
-    service: preselectedService,
-    address: '',
-    message: '',
-  });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [state, handleSubmit] = useForm(FORMSPREE_ID);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-
-    if (!BUSINESS.formspreeId) {
-      // Dev mode: just show success so the UI is testable
-      setTimeout(() => setStatus('success'), 800);
-      return;
-    }
-
-    try {
-      const res = await fetch(`https://formspree.io/f/${BUSINESS.formspreeId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      setStatus(res.ok ? 'success' : 'error');
-    } catch {
-      setStatus('error');
-    }
-  };
-
-  if (status === 'success') {
+  if (state.succeeded) {
     return (
       <div className="bg-green-50 border border-green-200 rounded-2xl p-10 text-center">
         <CheckCircle size={48} className="text-green-500 mx-auto mb-4" />
@@ -72,62 +29,60 @@ export default function QuoteForm({ preselectedService = '' }: { preselectedServ
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {status === 'error' && (
-        <div className="flex items-center gap-2 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
-          <AlertCircle size={16} />
-          Something went wrong. Please call us directly at{' '}
-          <a href={BUSINESS.phoneHref} className="underline font-semibold">
-            {BUSINESS.phone}
-          </a>
-        </div>
-      )}
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
+          <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1">
+            Full Name *
+          </label>
           <input
+            id="name"
             type="text"
             name="name"
             required
-            value={form.name}
-            onChange={handleChange}
             placeholder="John Smith"
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
+          <ValidationError field="name" prefix="Name" errors={state.errors} className="text-red-600 text-xs mt-1" />
         </div>
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
+          <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1">
+            Phone Number *
+          </label>
           <input
+            id="phone"
             type="tel"
             name="phone"
             required
-            value={form.phone}
-            onChange={handleChange}
             placeholder="(865) 000-0000"
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
           />
+          <ValidationError field="phone" prefix="Phone" errors={state.errors} className="text-red-600 text-xs mt-1" />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+        <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1">
+          Email Address
+        </label>
         <input
+          id="email"
           type="email"
           name="email"
-          value={form.email}
-          onChange={handleChange}
           placeholder="john@example.com"
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
         />
+        <ValidationError field="email" prefix="Email" errors={state.errors} className="text-red-600 text-xs mt-1" />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">Service Needed *</label>
+        <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-1">
+          Service Needed *
+        </label>
         <select
+          id="service"
           name="service"
           required
-          value={form.service}
-          onChange={handleChange}
+          defaultValue={preselectedService}
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent bg-white"
         >
           <option value="">Select a service...</option>
@@ -138,43 +93,47 @@ export default function QuoteForm({ preselectedService = '' }: { preselectedServ
           ))}
           <option value="Multiple Services">Multiple Services</option>
         </select>
+        <ValidationError field="service" prefix="Service" errors={state.errors} className="text-red-600 text-xs mt-1" />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
+        <label htmlFor="address" className="block text-sm font-semibold text-gray-700 mb-1">
           Property Address *
         </label>
         <input
+          id="address"
           type="text"
           name="address"
           required
-          value={form.address}
-          onChange={handleChange}
           placeholder="123 Main St, Knoxville, TN"
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent"
         />
+        <ValidationError field="address" prefix="Address" errors={state.errors} className="text-red-600 text-xs mt-1" />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
+        <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-1">
           Additional Details
         </label>
         <textarea
+          id="message"
           name="message"
           rows={3}
-          value={form.message}
-          onChange={handleChange}
           placeholder="Tell us anything else about the job (size, special concerns, etc.)"
           className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent resize-none"
         />
+        <ValidationError field="message" prefix="Message" errors={state.errors} className="text-red-600 text-xs mt-1" />
       </div>
+
+      {/* Form-level errors (e.g. network/Formspree errors) */}
+      <ValidationError errors={state.errors} className="text-red-600 text-sm bg-red-50 border border-red-200 rounded-lg px-4 py-3" />
 
       <button
         type="submit"
-        disabled={status === 'loading'}
-        className="w-full flex items-center justify-center gap-2 bg-[#38BDF8] text-[#1B2A4A] font-bold text-lg py-4 rounded-lg hover:bg-[#0EA5E9] transition-colors shadow-lg disabled:opacity-60"
+        disabled={state.submitting}
+        className="w-full flex items-center justify-center gap-2 bg-[#38BDF8] text-[#1B2A4A] font-bold text-lg py-4 rounded-lg hover:bg-[#0EA5E9] transition-colors shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {status === 'loading' ? (
+        {state.submitting ? (
           'Sending...'
         ) : (
           <>

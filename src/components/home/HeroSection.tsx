@@ -14,24 +14,31 @@ export default function HeroSection() {
         className="object-cover"
         priority
       />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A]/92 via-[#1B2A4A]/75 to-[#1B2A4A]/30" />
+      {/* Dark overlay — two layers for guaranteed readability */}
+      <div className="absolute inset-0 bg-[#1B2A4A]/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A]/90 via-[#1B2A4A]/70 to-[#1B2A4A]/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="max-w-2xl">
           {/* Label */}
-          <span className="inline-block bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-[#38BDF8] text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+          <span className="inline-block bg-[#38BDF8] text-[#1B2A4A] text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 shadow-lg">
             Knoxville&apos;s Trusted Exterior Cleaners
           </span>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight"
+            style={{ textShadow: '0 2px 12px rgba(0,0,0,0.7)' }}
+          >
             Make Your Home{' '}
             <span className="text-[#38BDF8]">Look Brand New</span> Again
           </h1>
 
           {/* Subheadline */}
-          <p className="mt-6 text-lg sm:text-xl text-gray-200 leading-relaxed">
+          <p
+            className="mt-6 text-lg sm:text-xl text-white leading-relaxed font-medium"
+            style={{ textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}
+          >
             Professional pressure washing, soft washing, and window cleaning for Knoxville
             homeowners. Fast scheduling, guaranteed results, fully insured.
           </p>
@@ -54,18 +61,24 @@ export default function HeroSection() {
           </div>
 
           {/* Urgency */}
-          <div className="mt-5 flex items-center gap-2 text-[#38BDF8] font-semibold">
-            <Clock size={16} />
-            <span className="text-sm">Limited availability this week — book your spot now</span>
+          <div
+            className="mt-5 flex items-center gap-2 font-bold"
+            style={{ textShadow: '0 1px 6px rgba(0,0,0,0.9)' }}
+          >
+            <Clock size={16} className="text-[#38BDF8] flex-shrink-0" />
+            <span className="text-[#38BDF8] text-sm">
+              Limited availability this week — book your spot now
+            </span>
           </div>
 
           {/* Trust row */}
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-3">
             {['Fully Insured', 'Free Estimates', '500+ Happy Homeowners', 'Same-Week Scheduling'].map(
               (badge) => (
                 <span
                   key={badge}
-                  className="bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-semibold px-3 py-1.5 rounded-full"
+                  className="bg-white/25 backdrop-blur border border-white/50 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md"
+                  style={{ textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}
                 >
                   ✓ {badge}
                 </span>
