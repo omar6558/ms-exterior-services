@@ -3,11 +3,6 @@ import SectionHeading from '@/components/ui/SectionHeading';
 
 const reasons = [
   {
-    icon: ShieldCheck,
-    stat: 'Fully Insured',
-    desc: 'We carry full liability insurance on every job so your property is always protected.',
-  },
-  {
     icon: Users,
     stat: '500+ Happy Customers',
     desc: 'Trusted by hundreds of Knoxville homeowners with 5-star reviews to prove it.',
@@ -21,6 +16,11 @@ const reasons = [
     icon: Award,
     stat: 'Satisfaction Guaranteed',
     desc: 'Not happy with the results? We come back and make it right — free of charge.',
+  },
+  {
+    icon: ShieldCheck,
+    stat: 'Quality Results',
+    desc: 'Professional-grade equipment and proven techniques on every single job.',
   },
 ];
 

@@ -40,7 +40,7 @@ export default function HeroSection() {
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.8)' }}
           >
             Professional pressure washing, soft washing, and window cleaning for Knoxville
-            homeowners. Fast scheduling, guaranteed results, fully insured.
+            homeowners. Fast scheduling, guaranteed results, professional quality.
           </p>
 
           {/* CTAs */}
@@ -73,7 +73,7 @@ export default function HeroSection() {
 
           {/* Trust row */}
           <div className="mt-8 flex flex-wrap gap-3">
-            {['Fully Insured', 'Free Estimates', '500+ Happy Homeowners', 'Same-Week Scheduling'].map(
+            {['Free Estimates', '500+ Happy Homeowners', 'Same-Week Scheduling', 'Satisfaction Guaranteed'].map(
               (badge) => (
                 <span
                   key={badge}

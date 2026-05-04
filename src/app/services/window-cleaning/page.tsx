@@ -16,7 +16,7 @@ const benefits = [
   'Interior and exterior window cleaning',
   'Screen cleaning and reinstallation included',
   'Sill and track wiped clean',
-  'Safe for all window types and frames',
+  'Safe for all window types and frames — no scratches',
   'No drips on walls or floors indoors',
 ];
 

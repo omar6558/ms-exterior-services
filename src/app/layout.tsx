@@ -14,21 +14,19 @@ export const metadata: Metadata = {
     template: '%s | MS Exterior Services',
   },
   description:
-    'Professional pressure washing, soft washing, window cleaning & gutter cleaning in Knoxville, TN. Licensed & insured. Free estimates. Call (865) 320-8891.',
+    'Professional pressure washing, soft washing & window cleaning in Knoxville, TN. Free estimates. Call (865) 320-8891.',
   keywords: [
     'pressure washing Knoxville TN',
     'house washing near me',
     'exterior cleaning Knoxville',
     'soft washing Knoxville',
     'window cleaning Knoxville TN',
-    'gutter cleaning Knoxville',
-    'roof cleaning Knoxville TN',
   ],
   metadataBase: new URL('https://msexteriorservices.com'), // SWAP: your real domain
   openGraph: {
     title: 'MS Exterior Services | Knoxville Exterior Cleaning',
     description:
-      'Professional pressure washing, soft washing, window cleaning & gutter cleaning in Knoxville, TN.',
+      'Professional pressure washing, soft washing & window cleaning in Knoxville, TN.',
     type: 'website',
     locale: 'en_US',
   },

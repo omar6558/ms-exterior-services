@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://msexteriorservices.com
+
+# Sitemaps
+Sitemap: https://msexteriorservices.com/sitemap.xml

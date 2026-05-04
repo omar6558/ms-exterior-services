@@ -17,7 +17,7 @@ const benefits = [
   'Dramatically improves curb appeal',
   'Increases the lifespan of your surfaces',
   'Professional-grade equipment, residential care',
-  'No streaks, no damage — guaranteed',
+  'No streaks, no damage — guaranteed results',
 ];
 
 const steps = [

@@ -16,8 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Professional exterior cleaning services for homeowners across East Tennessee. Licensed,
-              insured, and satisfaction guaranteed.
+              Professional exterior cleaning services for homeowners across East Tennessee. Quality work, guaranteed results.
             </p>
           </div>
 

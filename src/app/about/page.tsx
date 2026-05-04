@@ -70,15 +70,13 @@ export default function AboutPage() {
                 because I know your home is your biggest investment.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                We&apos;re fully licensed and insured, we back every job with a satisfaction guarantee,
-                and we&apos;re always transparent about pricing. No surprises. No pressure. Just
-                results you can be proud of.
+                We back every job with a satisfaction guarantee and we&apos;re always transparent
+                about pricing. No surprises. No pressure. Just results you can be proud of.
               </p>
 
               <div className="mt-8 space-y-2">
                 {[
                   'Locally owned and operated in Knoxville, TN',
-                  'Licensed, bonded, and fully insured',
                   'Serving 500+ happy homeowners and counting',
                   'Satisfaction guarantee on every job',
                   'Same-week scheduling in most cases',

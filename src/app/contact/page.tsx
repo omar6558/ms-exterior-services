@@ -7,7 +7,7 @@ import { BUSINESS } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Get a Free Quote | MS Exterior Services Knoxville TN',
   description:
-    'Contact MS Exterior Services in Knoxville TN. Call (865) 320-8891 or fill out our quote form. Free estimates, fast response, fully insured.',
+    'Contact MS Exterior Services in Knoxville TN. Call (865) 320-8891 or fill out our quote form. Free estimates, fast response.',
 };
 
 export default function ContactPage() {

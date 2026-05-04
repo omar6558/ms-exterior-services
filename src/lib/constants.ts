@@ -35,22 +35,10 @@ export const SERVICES = [
     icon: 'Wind',
   },
   {
-    title: 'Gutter Cleaning',
-    slug: 'gutter-cleaning',
-    shortDesc: 'Clear clogs and protect your home from water damage.',
-    icon: 'ArrowDownFromLine',
-  },
-  {
     title: 'Window Cleaning',
     slug: 'window-cleaning',
     shortDesc: 'Streak-free, crystal-clear windows inside and out.',
     icon: 'Sparkles',
-  },
-  {
-    title: 'Roof Cleaning',
-    slug: 'roof-cleaning',
-    shortDesc: 'Remove black streaks, moss, and algae without voiding your warranty.',
-    icon: 'Home',
   },
 ];
 

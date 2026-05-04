@@ -13,7 +13,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 export const metadata: Metadata = {
   title: 'Pressure Washing & Exterior Cleaning Knoxville TN | MS Exterior Services',
   description:
-    'Professional pressure washing, soft washing, window cleaning & gutter cleaning in Knoxville, TN. Licensed & insured. Free estimates. Call (865) 320-8891 today.',
+    'Professional pressure washing, soft washing & window cleaning in Knoxville, TN. Free estimates. Call (865) 320-8891 today.',
 };
 
 export default function HomePage() {
@@ -42,7 +42,7 @@ export default function HomePage() {
                   'We typically respond within 2 hours',
                   'Same-week availability in most areas',
                   'No pushy sales — just honest pricing',
-                  'Fully insured on every job',
+                  'Professional quality on every job',
                 ].map((pt) => (
                   <div key={pt} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-[#38BDF8]/20 flex items-center justify-center flex-shrink-0">
