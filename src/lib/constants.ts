@@ -37,7 +37,7 @@ export const SERVICES = [
   {
     title: 'Window Cleaning',
     slug: 'window-cleaning',
-    shortDesc: 'Streak-free, crystal-clear windows inside and out.',
+    shortDesc: 'Exterior window cleaning for cleaner, brighter glass.',
     icon: 'Sparkles',
   },
 ];

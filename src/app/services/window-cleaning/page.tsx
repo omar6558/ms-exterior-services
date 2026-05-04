@@ -8,23 +8,23 @@ import { CheckCircle } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Window Cleaning Knoxville TN, Streak-Free Results',
   description:
-    'Residential window cleaning in Knoxville TN. Interior and exterior. Spotless results, free estimates. Call (865) 320-8891.',
+    'Residential exterior window cleaning in Knoxville TN. Cleaner, brighter glass with free estimates. Call (865) 320-8891.',
 };
 
 const benefits = [
-  'Streak-free, crystal-clear results, guaranteed',
-  'Interior and exterior window cleaning',
-  'Screen cleaning and reinstallation included',
-  'Sill and track wiped clean',
-  'Safe for all window types and frames, no scratches',
-  'No drips on walls or floors indoors',
+  'Exterior window cleaning for residential homes',
+  'Water-fed pole cleaning for safer ground-level work',
+  'Purified water helps reduce spotting and streaking',
+  'Removes pollen, dust, dirt, and exterior buildup',
+  'Safer for frames, seals, landscaping, and nearby surfaces',
+  'Free estimate before any work begins',
 ];
 
 const steps = [
-  { step: '1. Window Count', desc: 'We count and assess every window including size and accessibility.' },
-  { step: '2. Screen Removal', desc: 'Screens are carefully removed, cleaned, and set aside.' },
-  { step: '3. Clean & Squeegee', desc: 'We clean with professional solution and squeegee to streak-free perfection.' },
-  { step: '4. Detail & Replace', desc: 'Sills wiped, screens replaced, job inspected.' },
+  { step: '1. Exterior Assessment', desc: 'We review the window layout, height, access, and buildup.' },
+  { step: '2. Setup & Protect', desc: 'We set up the pole system and work carefully around landscaping and siding.' },
+  { step: '3. Water-Fed Pole Clean', desc: 'We clean exterior glass from the ground using a long pole and brush system.' },
+  { step: '4. Final Check', desc: 'We inspect the exterior glass and make sure the work looks clean.' },
 ];
 
 export default function WindowCleaningPage() {
@@ -32,7 +32,7 @@ export default function WindowCleaningPage() {
     <>
       <ServiceHero
         title="Professional Window Cleaning in Knoxville, TN"
-        subtitle="Streak-free, spotless windows make your home shine inside and out. We clean them right, every time."
+        subtitle="Exterior window cleaning that helps your home look brighter, cleaner, and better cared for."
         imageUrl="/images/service-window-cleaning.png"
         imageAlt="Professional window cleaning service in Knoxville Tennessee"
         breadcrumb="Window Cleaning"
@@ -48,13 +48,14 @@ export default function WindowCleaningPage() {
                 Why Professional Window Cleaning?
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Hard water spots, dust, pollen, and grime build up on windows over time, and DIY
-                cleaning often leaves streaks that look worse than before. Our professional-grade
-                squeegees and solutions leave every pane crystal clear.
+                Dust, pollen, dirt, and exterior buildup collect on glass over time and make the
+                whole home look dull. Our exterior window cleaning service is built to brighten the
+                glass from the outside using a water-fed pole system.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                We handle interior and exterior cleaning, including screens, sills, and tracks.
-                You&apos;ll notice the difference in natural light immediately.
+                We work from the ground whenever possible with a long pole and brush, then use
+                purified water to rinse the glass clean. It is a practical, safer way to handle
+                exterior windows without dragging equipment through your home.
               </p>
               <div className="mt-8">
                 <p className="font-semibold text-[#1B2A4A] mb-4">What&apos;s Included:</p>
@@ -70,23 +71,25 @@ export default function WindowCleaningPage() {
             </div>
 
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8">
-              <span className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest">Pricing</span>
-              <h3 className="mt-2 text-2xl font-bold text-[#1B2A4A]">Starting from $149</h3>
+              <span className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest">Free Estimate</span>
+              <h3 className="mt-2 text-2xl font-bold text-[#1B2A4A]">Every Home Gets a Custom Quote</h3>
               <p className="mt-2 text-gray-600">
-                Priced per pane or by home size. Always quoted before starting.
+                Window cleaning prices depend on the home, window layout, access, height, buildup,
+                and how much exterior glass needs cleaning. We do not use a one-size-fits-all price
+                or a window limit.
               </p>
-              <div className="mt-6 space-y-3">
-                <div className="flex justify-between text-sm border-b border-gray-200 pb-2">
-                  <span className="text-gray-600">Exterior only (up to 15 windows)</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $149</span>
+              <div className="mt-6 space-y-3 text-sm text-gray-700">
+                <div className="flex items-start gap-3">
+                  <CheckCircle size={18} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>Tell us about the property and what exterior windows you want cleaned.</span>
                 </div>
-                <div className="flex justify-between text-sm border-b border-gray-200 pb-2">
-                  <span className="text-gray-600">Interior & Exterior</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $249</span>
+                <div className="flex items-start gap-3">
+                  <CheckCircle size={18} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>We review access, height, and condition before giving a clear estimate.</span>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Large homes / custom</span>
-                  <span className="font-semibold text-[#1B2A4A]">Custom Quote</span>
+                <div className="flex items-start gap-3">
+                  <CheckCircle size={18} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>You approve the quote before we schedule or start the job.</span>
                 </div>
               </div>
               <a
