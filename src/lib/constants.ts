@@ -31,7 +31,7 @@ export const SERVICES = [
   {
     title: 'Soft Washing',
     slug: 'soft-washing',
-    shortDesc: "Low-pressure cleaning that's safe for siding, roofs, and painted surfaces.",
+    shortDesc: "Low-pressure cleaning that's safe for siding, trim, and painted surfaces.",
     icon: 'Wind',
   },
   {

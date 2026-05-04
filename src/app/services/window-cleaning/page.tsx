@@ -6,17 +6,17 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Window Cleaning Knoxville TN — Streak-Free Results',
+  title: 'Window Cleaning Knoxville TN, Streak-Free Results',
   description:
-    'Residential window cleaning in Knoxville TN. Interior & exterior. Spotless results, insured technicians. Free estimates. Call (865) 320-8891.',
+    'Residential window cleaning in Knoxville TN. Interior and exterior. Spotless results, free estimates. Call (865) 320-8891.',
 };
 
 const benefits = [
-  'Streak-free, crystal-clear results — guaranteed',
+  'Streak-free, crystal-clear results, guaranteed',
   'Interior and exterior window cleaning',
   'Screen cleaning and reinstallation included',
   'Sill and track wiped clean',
-  'Safe for all window types and frames — no scratches',
+  'Safe for all window types and frames, no scratches',
   'No drips on walls or floors indoors',
 ];
 
@@ -30,11 +30,10 @@ const steps = [
 export default function WindowCleaningPage() {
   return (
     <>
-      {/* SWAP: replace with your best window cleaning job photo */}
       <ServiceHero
         title="Professional Window Cleaning in Knoxville, TN"
         subtitle="Streak-free, spotless windows make your home shine inside and out. We clean them right, every time."
-        imageUrl="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1400&q=85"
+        imageUrl="/images/service-window-cleaning.png"
         imageAlt="Professional window cleaning service in Knoxville Tennessee"
         breadcrumb="Window Cleaning"
       />
@@ -49,7 +48,7 @@ export default function WindowCleaningPage() {
                 Why Professional Window Cleaning?
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Hard water spots, dust, pollen, and grime build up on windows over time — and DIY
+                Hard water spots, dust, pollen, and grime build up on windows over time, and DIY
                 cleaning often leaves streaks that look worse than before. Our professional-grade
                 squeegees and solutions leave every pane crystal clear.
               </p>

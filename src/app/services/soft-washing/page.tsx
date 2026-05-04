@@ -8,7 +8,7 @@ import { CheckCircle } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Soft Washing Knoxville TN, Safe House & Siding Washing',
   description:
-    'Low-pressure soft washing for siding, roofs & painted surfaces in Knoxville TN. Kills mold & algae at the source. Free estimates. Call (865) 320-8891.',
+    'Low-pressure soft washing for siding, trim, and painted surfaces in Knoxville TN. Kills mold and algae at the source. Free estimates. Call (865) 320-8891.',
 };
 
 const benefits = [
@@ -30,11 +30,10 @@ const steps = [
 export default function SoftWashingPage() {
   return (
     <>
-      {/* SWAP: replace with your best soft washing job photo */}
       <ServiceHero
         title="Soft Washing Services in Knoxville, TN"
-        subtitle="Gentle on your home, tough on mold and algae. The safe way to clean siding, roofs, and painted surfaces."
-        imageUrl="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=1400&q=85"
+        subtitle="Gentle on your home, tough on mold and algae. The safe way to clean siding, trim, and painted surfaces."
+        imageUrl="/images/service-soft-washing.png"
         imageAlt="Soft washing house siding in Knoxville Tennessee"
         breadcrumb="Soft Washing"
       />
@@ -53,7 +52,7 @@ export default function SoftWashingPage() {
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Soft washing uses low water pressure combined with specialized biodegradable cleaning
                 solutions to safely remove mold, algae, mildew, dirt, and staining from surfaces
-                that can&apos;t handle high-pressure water, like siding, roofing, and painted wood.
+                that can&apos;t handle high-pressure water, like siding, trim, and painted wood.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Unlike pressure washing, soft washing kills the organic growth at the root, meaning

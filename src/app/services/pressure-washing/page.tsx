@@ -6,9 +6,9 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Pressure Washing Knoxville TN — Driveways, Patios & More',
+  title: 'Pressure Washing Knoxville TN, Driveways, Patios & More',
   description:
-    'Expert pressure washing in Knoxville, TN. Driveways, sidewalks, decks & siding. Licensed, insured, free estimates. Call (865) 320-8891.',
+    'Expert pressure washing in Knoxville, TN. Driveways, sidewalks, decks, and siding. Free estimates. Call (865) 320-8891.',
 };
 
 const benefits = [
@@ -17,7 +17,7 @@ const benefits = [
   'Dramatically improves curb appeal',
   'Increases the lifespan of your surfaces',
   'Professional-grade equipment, residential care',
-  'No streaks, no damage — guaranteed results',
+  'No streaks, no damage, guaranteed results',
 ];
 
 const steps = [
@@ -30,11 +30,10 @@ const steps = [
 export default function PressureWashingPage() {
   return (
     <>
-      {/* SWAP: replace with your best pressure washing job photo */}
       <ServiceHero
         title="Professional Pressure Washing in Knoxville, TN"
         subtitle="Transform your driveway, patio, deck, or sidewalk from grimy to spotless. Fast results, guaranteed quality."
-        imageUrl="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1400&q=85"
+        imageUrl="/images/service-pressure-washing.png"
         imageAlt="Pressure washing concrete driveway in Knoxville Tennessee"
         breadcrumb="Pressure Washing"
       />
@@ -58,7 +57,7 @@ export default function PressureWashingPage() {
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 At MS Exterior Services, we use professional-grade equipment calibrated for each
-                surface type — strong enough to clean thoroughly without causing any damage.
+                surface type, strong enough to clean thoroughly without causing any damage.
               </p>
 
               <div className="mt-8">
