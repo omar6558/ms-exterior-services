@@ -73,7 +73,7 @@ export default function HeroSection() {
 
           {/* Trust row */}
           <div className="mt-8 flex flex-wrap gap-3">
-            {['Free Estimates', '500+ Happy Homeowners', 'Same-Week Scheduling', 'Satisfaction Guaranteed'].map(
+            {['Free Estimates', '100+ Happy Homeowners', 'Same-Week Scheduling', 'Satisfaction Guaranteed'].map(
               (badge) => (
                 <span
                   key={badge}

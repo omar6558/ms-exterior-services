@@ -1,7 +1,7 @@
 import { Star, Clock, ThumbsUp } from 'lucide-react';
 
 const badges = [
-  { icon: ThumbsUp, text: '500+ Happy Customers' },
+  { icon: ThumbsUp, text: '100+ Happy Customers' },
   { icon: Star, text: '100% Satisfaction Guarantee' },
   { icon: Clock, text: 'Free Estimates' },
 ];

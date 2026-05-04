@@ -4,7 +4,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 const reasons = [
   {
     icon: Users,
-    stat: '500+ Happy Customers',
+    stat: '100+ Happy Customers',
     desc: 'Trusted by hundreds of Knoxville homeowners with 5-star reviews to prove it.',
   },
   {

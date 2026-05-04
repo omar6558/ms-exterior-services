@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { CheckCircle, Phone } from 'lucide-react';
 import TrustBadges from '@/components/shared/TrustBadges';
@@ -9,7 +8,7 @@ import { BUSINESS } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'About MS Exterior Services | Knoxville Exterior Cleaning',
   description:
-    'Meet Mo and the MS Exterior Services team. A local Knoxville business built on hard work, reliability, and exceptional results. Learn our story.',
+    'Learn about MS Exterior Services, a local Knoxville exterior cleaning company focused on pressure washing, soft washing, and window cleaning.',
 };
 
 const values = [
@@ -24,6 +23,21 @@ const values = [
   {
     title: 'Community',
     desc: 'We\'re local. We live here, work here, and care about the neighborhoods we serve across East Tennessee.',
+  },
+];
+
+const aboutCards = [
+  {
+    title: 'Who We Are',
+    desc: 'MS Exterior Services is a local Knoxville exterior cleaning company focused on dependable work, clear communication, and results homeowners can see right away.',
+  },
+  {
+    title: 'What We Do',
+    desc: 'We clean driveways, patios, sidewalks, siding, trim, and windows using the right method for each surface, from pressure washing to soft washing and water-fed pole window cleaning.',
+  },
+  {
+    title: 'What We Are Building',
+    desc: 'Our goal is to become the exterior cleaning team Knoxville homeowners call first, because the work is consistent, the pricing is straightforward, and the process is easy.',
   },
 ];
 
@@ -54,30 +68,32 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
               <span className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest">
-                Meet {BUSINESS.ownerName}
+                About Us
               </span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-[#1B2A4A]">
-                Built on Hard Work and a Simple Promise
+                Helping Knoxville Homes Look Clean, Bright, and Cared For
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Hi, I&apos;m {BUSINESS.ownerName}, the owner of MS Exterior Services. I started this
-                business because I saw a gap in the market: homeowners in Knoxville needed a
-                reliable, professional exterior cleaning service they could actually trust.
+                MS Exterior Services was built for homeowners who want their property cleaned the
+                right way without the runaround. We focus on exterior cleaning that improves curb
+                appeal, protects surfaces, and makes the whole home feel fresher.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Too many companies show up late, do a rushed job, and disappear. I built MS Exterior
-                around doing the opposite. Every home gets the same attention I&apos;d give my own —
-                because I know your home is your biggest investment.
+                Every job starts with looking at the surface, choosing the right cleaning method,
+                and explaining what we recommend before we begin. Some areas need controlled
+                pressure, some need a gentler soft wash, and windows need tools that leave the glass
+                clear without streaks.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                We back every job with a satisfaction guarantee and we&apos;re always transparent
-                about pricing. No surprises. No pressure. Just results you can be proud of.
+                We are trying to build the kind of local service people feel comfortable calling
+                again, honest scheduling, clean work, fair quotes, and results that make the outside
+                of the home look taken care of.
               </p>
 
               <div className="mt-8 space-y-2">
                 {[
                   'Locally owned and operated in Knoxville, TN',
-                  'Serving 500+ happy homeowners and counting',
+                  'Serving 100+ happy homeowners and counting',
                   'Satisfaction guarantee on every job',
                   'Same-week scheduling in most cases',
                 ].map((pt) => (
@@ -105,21 +121,13 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Owner Photo, SWAP: replace with your actual photo */}
-            <div className="relative">
-              <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/mo-professional.png"
-                  alt={`${BUSINESS.ownerName}, owner of MS Exterior Services`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-5 -left-5 bg-[#38BDF8] rounded-2xl px-6 py-4 shadow-xl">
-                <p className="text-[#1B2A4A] font-extrabold text-2xl">500+</p>
-                <p className="text-[#1B2A4A] font-semibold text-sm">Happy Customers</p>
-              </div>
+            <div className="space-y-4">
+              {aboutCards.map(({ title, desc }) => (
+                <div key={title} className="border border-gray-200 bg-gray-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-[#1B2A4A]">{title}</h3>
+                  <p className="mt-2 text-gray-600 leading-relaxed">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -39,29 +39,31 @@ export default function PressureWashingPage() {
       />
       <TrustBadges />
 
-      {/* What is it */}
+      {/* Service details */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
               <span className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest">
-                The Service
+                Surface Care
               </span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-[#1B2A4A]">
-                What Is Pressure Washing?
+                Built for Concrete, Brick, Patios, and Walkways
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Pressure washing uses high-pressure water to remove dirt, mold, algae, oil stains,
-                and years of grime from hard surfaces. It&apos;s the fastest and most effective way
-                to restore driveways, sidewalks, patios, decks, and exterior walls.
+                Driveways, sidewalks, patios, and other hard surfaces take a beating from dirt,
+                algae, mildew, oil spots, and Tennessee weather. Our pressure washing service is
+                designed to lift that buildup and bring back a cleaner, brighter surface without
+                treating every material the same.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                At MS Exterior Services, we use professional-grade equipment calibrated for each
-                surface type, strong enough to clean thoroughly without causing any damage.
+                Before we start, we look at the surface type, staining, drainage, and nearby
+                landscaping. Then we adjust the pressure, nozzle, and cleaning approach so the job
+                is thorough, controlled, and appropriate for your property.
               </p>
 
               <div className="mt-8">
-                <p className="font-semibold text-[#1B2A4A] mb-4">What&apos;s Included:</p>
+                <p className="font-semibold text-[#1B2A4A] mb-4">Where Pressure Washing Helps:</p>
                 <div className="space-y-2">
                   {benefits.map((b) => (
                     <div key={b} className="flex items-start gap-3">
