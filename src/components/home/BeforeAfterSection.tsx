@@ -36,7 +36,7 @@ export default function BeforeAfterSection() {
               key={label}
               className="rounded-2xl overflow-hidden shadow-xl border border-gray-100 group"
             >
-              <div className="relative w-full aspect-square">
+              <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={src}
                   alt={alt}

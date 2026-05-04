@@ -1,14 +1,12 @@
 import Link from 'next/link';
-import { Droplets, Wind, ArrowDownFromLine, Sparkles, Home, ArrowRight, type LucideIcon } from 'lucide-react';
+import { Droplets, Wind, Sparkles, ArrowRight, type LucideIcon } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { SERVICES } from '@/lib/constants';
 
 const iconMap: Record<string, LucideIcon> = {
   Droplets,
   Wind,
-  ArrowDownFromLine,
   Sparkles,
-  Home,
 };
 
 export default function ServicesGrid() {
@@ -22,7 +20,8 @@ export default function ServicesGrid() {
           center
         />
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 3 service cards — clean single row */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {SERVICES.map((service) => {
             const Icon = iconMap[service.icon] || Droplets;
             return (
@@ -42,25 +41,24 @@ export default function ServicesGrid() {
               </Link>
             );
           })}
+        </div>
 
-          {/* CTA Card */}
-          <div className="bg-[#1B2A4A] rounded-2xl p-7 flex flex-col justify-between">
-            <div>
-              <p className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest mb-3">
-                Not sure what you need?
-              </p>
-              <h3 className="text-xl font-bold text-white mb-2">Get a Free Assessment</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                We&apos;ll walk your property and recommend exactly what it needs — no pressure.
-              </p>
-            </div>
-            <Link
-              href="/#quote"
-              className="mt-6 inline-block bg-[#38BDF8] text-[#1B2A4A] font-bold px-6 py-3 rounded-xl hover:bg-[#0EA5E9] transition-colors text-center"
-            >
-              Request Free Estimate
-            </Link>
+        {/* Full-width CTA below — no orphaned card */}
+        <div className="mt-6 bg-[#1B2A4A] rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest mb-1">
+              Not sure what you need?
+            </p>
+            <h3 className="text-xl font-bold text-white">
+              Get a Free Assessment — We&apos;ll Walk Your Property
+            </h3>
           </div>
+          <Link
+            href="/#quote"
+            className="flex-shrink-0 bg-[#38BDF8] text-[#1B2A4A] font-bold px-8 py-3 rounded-xl hover:bg-[#0EA5E9] transition-colors whitespace-nowrap"
+          >
+            Request Free Estimate
+          </Link>
         </div>
       </div>
     </section>
