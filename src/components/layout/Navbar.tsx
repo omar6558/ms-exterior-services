@@ -27,20 +27,27 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-8">
             {/* Services Dropdown */}
             <div
-              className="relative group"
+              className="relative flex h-20 items-center"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 text-gray-700 font-medium hover:text-[#1B2A4A] transition-colors">
+              <button
+                className="flex items-center gap-1 text-gray-700 font-medium hover:text-[#1B2A4A] transition-colors"
+                onClick={() => setServicesOpen((open) => !open)}
+                onFocus={() => setServicesOpen(true)}
+                aria-expanded={servicesOpen}
+                aria-haspopup="true"
+              >
                 Services <ChevronDown size={16} />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                <div className="absolute top-full left-0 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
                   {SERVICES.map((s) => (
                     <Link
                       key={s.slug}
                       href={`/services/${s.slug}`}
                       className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#F0F9FF] hover:text-[#1B2A4A] font-medium transition-colors"
+                      onClick={() => setServicesOpen(false)}
                     >
                       {s.title}
                     </Link>
