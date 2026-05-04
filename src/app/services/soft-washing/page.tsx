@@ -6,7 +6,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Soft Washing Knoxville TN — Safe House & Roof Washing',
+  title: 'Soft Washing Knoxville TN, Safe House & Siding Washing',
   description:
     'Low-pressure soft washing for siding, roofs & painted surfaces in Knoxville TN. Kills mold & algae at the source. Free estimates. Call (865) 320-8891.',
 };
@@ -53,7 +53,7 @@ export default function SoftWashingPage() {
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Soft washing uses low water pressure combined with specialized biodegradable cleaning
                 solutions to safely remove mold, algae, mildew, dirt, and staining from surfaces
-                that can&apos;t handle high-pressure water — like siding, roofing, and painted wood.
+                that can&apos;t handle high-pressure water, like siding, roofing, and painted wood.
               </p>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Unlike pressure washing, soft washing kills the organic growth at the root, meaning
@@ -90,8 +90,8 @@ export default function SoftWashingPage() {
                   <span className="font-semibold text-[#1B2A4A]">From $349</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Roof soft wash</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $299</span>
+                  <span className="text-gray-600">Large / multi-story home</span>
+                  <span className="font-semibold text-[#1B2A4A]">From $449</span>
                 </div>
               </div>
               <a

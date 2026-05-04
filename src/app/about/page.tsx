@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: 'Quality',
-    desc: 'We don\'t cut corners. Every job gets the full treatment — no rushing, no shortcuts, no excuses.',
+    desc: 'We don\'t cut corners. Every job gets the full treatment, no rushing, no shortcuts, no excuses.',
   },
   {
     title: 'Integrity',
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 Built on Hard Work and a Simple Promise
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Hi, I&apos;m {BUSINESS.ownerName} — the owner of MS Exterior Services. I started this
+                Hi, I&apos;m {BUSINESS.ownerName}, the owner of MS Exterior Services. I started this
                 business because I saw a gap in the market: homeowners in Knoxville needed a
                 reliable, professional exterior cleaning service they could actually trust.
               </p>
@@ -105,11 +105,11 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Owner Photo — SWAP: replace with your actual photo */}
+            {/* Owner Photo, SWAP: replace with your actual photo */}
             <div className="relative">
               <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=85"
+                  src="/images/mo-professional.png"
                   alt={`${BUSINESS.ownerName}, owner of MS Exterior Services`}
                   fill
                   className="object-cover"

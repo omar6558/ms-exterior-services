@@ -54,14 +54,14 @@ export const TESTIMONIALS = [
     name: 'David R.',
     location: 'Farragut',
     rating: 5,
-    text: 'Got a quote fast, they showed up on time, and my house looks brand new. The roof cleaning alone made a huge difference. Highly recommend!',
+    text: 'Got a quote fast, they showed up on time, and my house looks brand new. The siding is spotless now and curb appeal is night and day. Highly recommend!',
     date: 'January 2025',
   },
   {
     name: 'Sarah K.',
     location: 'Powell',
     rating: 5,
-    text: 'I was skeptical at first but Mo and his team exceeded every expectation. The windows are spotless and the gutters flow perfectly. Best service in Knoxville.',
+    text: 'I was skeptical at first but Mo and his team exceeded every expectation. The windows are spotless and the whole house looks completely refreshed. Best service in Knoxville.',
     date: 'February 2025',
   },
   {
