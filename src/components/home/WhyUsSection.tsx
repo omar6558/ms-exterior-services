@@ -15,7 +15,7 @@ const reasons = [
   {
     icon: Award,
     stat: 'Satisfaction Guaranteed',
-    desc: 'Not happy with the results? We come back and make it right — free of charge.',
+    desc: 'Not happy with the results? We come back and make it right, free of charge.',
   },
   {
     icon: ShieldCheck,
@@ -38,9 +38,9 @@ export default function WhyUsSection() {
 
             <div className="mt-8 space-y-2">
               {[
-                'No hidden fees — your quote is your price',
+                'No hidden fees, your quote is your price',
                 'Eco-friendly, biodegradable cleaning solutions',
-                'Residential specialists — we know how to treat your home',
+                'Residential specialists, we know how to treat your home',
                 'Same-week availability in most cases',
                 'Free estimates with no obligation',
               ].map((point) => (

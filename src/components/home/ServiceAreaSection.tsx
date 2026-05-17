@@ -11,7 +11,7 @@ export default function ServiceAreaSection() {
             <SectionHeading
               label="Service Area"
               title="Proudly Serving East Tennessee"
-              subtitle="We serve Knoxville and all surrounding communities. Not sure if we cover your area? Just call — we'll let you know."
+              subtitle="We serve Knoxville and all surrounding communities. Not sure if we cover your area? Just call, we'll let you know."
             />
 
             <div className="mt-8 grid grid-cols-2 gap-3">
@@ -25,7 +25,7 @@ export default function ServiceAreaSection() {
 
             <div className="mt-8 flex items-center gap-2 text-[#1B2A4A] font-semibold">
               <MapPin size={18} className="text-[#38BDF8]" />
-              <span>Don&apos;t see your city? Call us — we may still serve you!</span>
+              <span>Don&apos;t see your city? Call us, we may still serve you!</span>
             </div>
           </div>
 

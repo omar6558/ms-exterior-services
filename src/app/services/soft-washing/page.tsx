@@ -73,26 +73,29 @@ export default function SoftWashingPage() {
 
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8">
               <span className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest">
-                Pricing
+                Free Estimate
               </span>
-              <h3 className="mt-2 text-2xl font-bold text-[#1B2A4A]">Starting from $249</h3>
-              <p className="mt-2 text-gray-600">
-                Price depends on square footage and level of contamination. Free estimate always provided first.
+              <h3 className="mt-2 text-2xl font-bold text-[#1B2A4A]">Contact for a Free Quote</h3>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Every home is different. Soft washing pricing depends on square footage,
+                surface type, story count, and level of contamination. We provide a free,
+                no-pressure estimate before any work begins, so you know exactly what to
+                expect.
               </p>
-              <div className="mt-6 space-y-3">
-                <div className="flex justify-between text-sm border-b border-gray-200 pb-2">
-                  <span className="text-gray-600">Single-story home</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $249</span>
-                </div>
-                <div className="flex justify-between text-sm border-b border-gray-200 pb-2">
-                  <span className="text-gray-600">Two-story home</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $349</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Large / multi-story home</span>
-                  <span className="font-semibold text-[#1B2A4A]">From $449</span>
-                </div>
-              </div>
+              <ul className="mt-6 space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>Free on-site or remote estimate</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>No hidden fees — the quote you get is the price you pay</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle size={16} className="text-[#38BDF8] flex-shrink-0 mt-0.5" />
+                  <span>Fast response, usually within 2 hours</span>
+                </li>
+              </ul>
               <a
                 href="tel:+18653208891"
                 className="mt-8 block w-full bg-[#38BDF8] text-[#1B2A4A] font-bold text-center py-4 rounded-xl hover:bg-[#0EA5E9] transition-colors"

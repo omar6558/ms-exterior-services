@@ -41,7 +41,7 @@ export default function HomePage() {
                 {[
                   'We typically respond within 2 hours',
                   'Same-week availability in most areas',
-                  'No pushy sales — just honest pricing',
+                  'No pushy sales, just honest pricing',
                   'Professional quality on every job',
                 ].map((pt) => (
                   <div key={pt} className="flex items-center gap-3">

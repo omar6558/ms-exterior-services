@@ -107,7 +107,7 @@ export default function ContactPage() {
               <div className="mt-8 bg-[#38BDF8]/10 border border-[#38BDF8]/30 rounded-2xl p-5">
                 <p className="font-semibold text-[#1B2A4A]">⚡ Limited Availability This Week</p>
                 <p className="mt-1 text-gray-700 text-sm">
-                  We fill up fast — contact us today to lock in your spot before we book out.
+                  We fill up fast, contact us today to lock in your spot before we book out.
                 </p>
               </div>
 

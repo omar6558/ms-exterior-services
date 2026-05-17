@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
         <SectionHeading
           label="What Homeowners Say"
           title="Real Reviews from Real Customers"
-          subtitle="Don't take our word for it — here's what Knoxville homeowners have to say."
+          subtitle="Don't take our word for it, here's what Knoxville homeowners have to say."
           center
           light
         />
@@ -32,22 +32,28 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {TESTIMONIALS.map((t) => (
-            <div
-              key={t.name}
-              className="bg-white/10 backdrop-blur border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors"
-            >
-              <StarRow count={t.rating} />
-              <blockquote className="mt-4 text-gray-200 text-sm leading-relaxed">
-                &ldquo;{t.text}&rdquo;
-              </blockquote>
-              <div className="mt-4 pt-4 border-t border-white/10">
-                <p className="text-white font-semibold text-sm">{t.name}</p>
-                <p className="text-[#38BDF8] text-xs">{t.location} · {t.date}</p>
+        <div className="-mx-4 sm:-mx-6 lg:-mx-8">
+          <div
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth px-4 sm:px-6 lg:px-8 pb-4"
+            style={{ scrollbarWidth: 'thin' }}
+          >
+            {TESTIMONIALS.map((t) => (
+              <div
+                key={t.name}
+                className="snap-start shrink-0 w-[280px] sm:w-[320px] bg-white/10 backdrop-blur border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors"
+              >
+                <StarRow count={t.rating} />
+                <blockquote className="mt-4 text-gray-200 text-sm leading-relaxed">
+                  &ldquo;{t.text}&rdquo;
+                </blockquote>
+                <div className="mt-4 pt-4 border-t border-white/10">
+                  <p className="text-white font-semibold text-sm">{t.name}</p>
+                  <p className="text-[#38BDF8] text-xs">{t.location} · {t.date}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <p className="mt-2 text-center text-white/50 text-xs sm:hidden">Swipe to see more →</p>
         </div>
       </div>
     </section>

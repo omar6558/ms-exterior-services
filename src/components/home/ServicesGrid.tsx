@@ -16,11 +16,11 @@ export default function ServicesGrid() {
         <SectionHeading
           label="What We Do"
           title="Professional Exterior Cleaning Services"
-          subtitle="Everything your home needs to look its absolute best — handled by a local team you can trust."
+          subtitle="Everything your home needs to look its absolute best, handled by a local team you can trust."
           center
         />
 
-        {/* 3 service cards — clean single row */}
+        {/* 3 service cards, clean single row */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {SERVICES.map((service) => {
             const Icon = iconMap[service.icon] || Droplets;
@@ -43,14 +43,14 @@ export default function ServicesGrid() {
           })}
         </div>
 
-        {/* Full-width CTA below — no orphaned card */}
+        {/* Full-width CTA below, no orphaned card */}
         <div className="mt-6 bg-[#1B2A4A] rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-[#38BDF8] text-sm font-semibold uppercase tracking-widest mb-1">
               Not sure what you need?
             </p>
             <h3 className="text-xl font-bold text-white">
-              Get a Free Assessment — We&apos;ll Walk Your Property
+              Get a Free Assessment, We&apos;ll Walk Your Property
             </h3>
           </div>
           <Link

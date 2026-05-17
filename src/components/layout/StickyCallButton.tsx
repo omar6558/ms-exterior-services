@@ -10,7 +10,7 @@ export default function StickyCallButton() {
     >
       <Phone size={20} className="text-[#38BDF8]" />
       <span>
-        Call Now — <span className="text-[#38BDF8]">{BUSINESS.phone}</span>
+        Call Now, <span className="text-[#38BDF8]">{BUSINESS.phone}</span>
       </span>
     </a>
   );

@@ -6,7 +6,7 @@ import { BUSINESS } from '@/lib/constants';
 export default function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Image — SWAP: replace with your best job photo */}
+      {/* Background Image, SWAP: replace with your best job photo */}
       <Image
         src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=85"
         alt="Clean home exterior in Knoxville Tennessee"
@@ -14,7 +14,7 @@ export default function HeroSection() {
         className="object-cover"
         priority
       />
-      {/* Dark overlay — two layers for guaranteed readability */}
+      {/* Dark overlay, two layers for guaranteed readability */}
       <div className="absolute inset-0 bg-[#1B2A4A]/60" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#1B2A4A]/90 via-[#1B2A4A]/70 to-[#1B2A4A]/40" />
 
@@ -67,7 +67,7 @@ export default function HeroSection() {
           >
             <Clock size={16} className="text-[#38BDF8] flex-shrink-0" />
             <span className="text-[#38BDF8] text-sm">
-              Limited availability this week — book your spot now
+              Limited availability this week, book your spot now
             </span>
           </div>
 

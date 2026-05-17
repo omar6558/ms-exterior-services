@@ -14,7 +14,7 @@ export default function FinalCTA() {
         </h2>
         <p className="mt-4 text-lg text-[#1B2A4A]/80 max-w-xl mx-auto">
           Join hundreds of Knoxville homeowners who trust MS Exterior Services. Get your free
-          estimate today — no commitment required.
+          estimate today, no commitment required.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
